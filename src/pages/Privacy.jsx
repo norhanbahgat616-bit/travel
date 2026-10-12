@@ -1,0 +1,6 @@
+import { Helmet } from 'react-helmet-async'
+import PageHeader from '../components/PageHeader'
+
+export default function Privacy() {
+  return <><Helmet><title>Privacy | Travel Golf Tours</title><meta name="description" content="Learn how this Travel Golf Tours demo handles locally stored data." /></Helmet><PageHeader title="Your privacy matters." subtitle="A clear explanation of the information this demo uses." imageKey="contact" breadcrumb={[{ label: 'Privacy' }]} /><section className="section-pad"><article className="section-shell max-w-3xl space-y-5 text-sm leading-7 text-muted"><h2 className="text-2xl font-semibold text-navy">Local demo information</h2><p>This front-end demonstration stores settings, mock accounts, trip requests, visa requests, reviews, wishlist items, and newsletter signups in your browser’s localStorage. The data is not sent to a server.</p><p>Do not enter sensitive personal information, actual passwords, payment details, or passport copies. You can remove locally stored items by clearing this site’s browser data.</p><h2 className="text-xl font-semibold text-navy">Contact</h2><p>For questions about this demo, contact info@travelgolftours.com.</p></article></section></>
+}

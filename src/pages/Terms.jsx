@@ -1,0 +1,6 @@
+import { Helmet } from 'react-helmet-async'
+import PageHeader from '../components/PageHeader'
+
+export default function Terms() {
+  return <><Helmet><title>Terms | Travel Golf Tours</title><meta name="description" content="Terms for using the Travel Golf Tours demonstration website." /></Helmet><PageHeader title="A few helpful terms." subtitle="Please read these notes before using the Travel Golf Tours demo." imageKey="booking" breadcrumb={[{ label: 'Terms' }]} /><section className="section-pad"><article className="section-shell max-w-3xl space-y-5 text-sm leading-7 text-muted"><h2 className="text-2xl font-semibold text-navy">Demonstration content</h2><p>This website is a front-end demonstration. All travel prices, currency exchange rates, visa fees, processing estimates, testimonials, and sample records are illustrative only and are not offers to sell travel services.</p><p>Availability, visa requirements, policies, and prices can change. Always confirm details with official providers and authorities before making travel decisions.</p><h2 className="text-xl font-semibold text-navy">Use of the site</h2><p>Use the website only for lawful travel planning. Do not submit sensitive information into the demo forms; they do not transmit securely to an operating service provider.</p></article></section></>
+}
